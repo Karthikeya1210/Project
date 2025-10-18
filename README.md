@@ -36,31 +36,84 @@ Project/
 │   └── analysis.py    # Main analysis script
 │
 ├── results/           # Analysis outputs
-│   └── population_growth_analysis.png
+│   ├── analysis/      # Analysis results in various formats
+│   │   └── model_results.json    # Model parameters and statistics
+│   └── population_growth_analysis.png  # Visualization plot
 │
+├── .gitignore         # Git ignore rules
 └── README.md          # Project documentation
 ```
 
-## Requirements
-- Python 3.x
+## Setup and Installation
+
+### 1. Install Python
+If you haven't installed Python 3.x yet, here's how to install it:
+
+#### On macOS:
+```bash
+# Using Homebrew (recommended)
+# First, install Homebrew if you haven't:
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Then install Python
+brew install python3
+```
+
+#### On Windows:
+1. Download the installer from [Python's official website](https://www.python.org/downloads/)
+2. Run the installer
+3. Make sure to check "Add Python to PATH" during installation
+
+#### On Linux (Ubuntu/Debian):
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+```
+
+Verify the installation:
+```bash
+python3 --version
+```
+
+### 2. Set Up Python Environment
+It's recommended to use a virtual environment:
+```bash
+# Create a virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+```
+
+### 2. Install Requirements
 - Required packages:
   - numpy: Data handling and mathematical operations
   - matplotlib: Data visualization
   - scipy: Curve fitting
   - scikit-learn: Statistical metrics
 
-## Installation
+### Install Required Packages
 ```bash
 pip install numpy matplotlib scipy scikit-learn
 ```
 
 ## Usage
-To run the analysis:
-1. Ensure you're in the project root directory
-2. Execute:
+
+### 1. Prepare the Environment
+Ensure you're in the project root directory and your virtual environment is activated (if using one).
+
+### 2. Run the Analysis
 ```bash
 python3 src/analysis.py
 ```
+
+### 3. View Results
+After running the analysis:
+- Check `results/population_growth_analysis.png` for the visualization
+- Review `results/analysis/model_results.json` for detailed model parameters and statistics
 
 ## Results
 The analysis compares two population growth models:
