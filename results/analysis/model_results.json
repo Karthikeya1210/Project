@@ -1,0 +1,21 @@
+{
+    "exponential_model": {
+        "parameters": {
+            "initial_population": 26.641302647081698,
+            "growth_rate": 0.16964421818906925
+        },
+        "r_squared": 0.7787161688633943
+    },
+    "logistic_model": {
+        "parameters": {
+            "carrying_capacity": 117.12764247209734,
+            "growth_rate": 0.7922033251291809,
+            "initial_population": 4.226845335151697
+        },
+        "r_squared": 0.9564491224169556
+    },
+    "model_comparison": {
+        "better_model": "Logistic",
+        "variance_difference_percentage": 17.773295355356122
+    }
+}
